@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бауыржанның Кофе Сайты</title>
+    <style>
+        /* Бастапқы стильдер */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f1ec;
+            color: #4e3629;
+        }
+
+        /* Үстіңгі навигация */
+        header {
+            background-color: #4e3629;
+            color: #f4f1ec;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: #f4f1ec;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+
+        header nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Басты бөлім */
+        .hero {
+            background: url('https://img.goodfon.com/original/2560x1024/c/ac/fon-chashka-kofeinye-zerna.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Мазмұн */
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4e3629;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #6f4f1f;
+            line-height: 1.6;
+        }
+        
+
+        /* Продукт бөлімі */
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            margin: 20px 0 10px;
+            font-size: 1.8em;
+            color: #4e3629;
+        }
+
+        .menu-item p {
+            color: #6f4f1f;
+            font-size: 1.1em;
+        }
+
+        /* Төменгі бөлік */
+        footer {
+            background-color: #4e3629;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Жауапты дизайн */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .hero h2 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .content h2 {
+                font-size: 2em;
+            }
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Үстіңгі бөлік -->
+    <header>
+        <h1>Кофе Әлемі</h1>
+        <nav>
+            <a href="#">Басты бет</a>
+            <a href="#">Меню</a>
+            <a href="#">Біз туралы</a>
+            <a href="#">Байланыс</a>
+        </nav>
+    </header>
+
+    <!-- Басты экран -->
+    <div class="hero">
+        <h2>Кофе Сүйгіштерге Арналған</h2>
+        <p>Әрбір стақан кофеде ерекше дәм мен әсер бар. Біздің кофемізді байқап көріңіз!</p>
+    </div>
+
+    <!-- Контент бөлімі -->
+    <div class="content">
+        <h2>Біздің Кофе Менюіміз</h2>
+        <p>Әрбір кофенің дәмі – шеберлік пен шығармашылықтың нәтижесі. Қонақтарымызға арналған ең үздік кофелер!</p>
+
+        <!-- Меню -->
+        <div class="menu">
+            <div class="menu-item">
+                <img src=https://i.pinimg.com/736x/5c/76/f8/5c76f8c81cae10ed2779dccb38d9ebfd.jpg alt="Эспрессо">
+                <h3>Эспрессо</h3>
+                <p>Қарапайым әрі күшті, кофенің таза дәмі.</p>
+            </div>
+            <div class="menu-item">
+                <img src=https://karfood.ru/wp-content/uploads/2021/06/5fa7d347f39515fa7d347f3953.png alt="Латте">
+                <h3>Латте</h3>
+                <p>Сүт пен кофенің керемет үйлесімі.</p>
+            </div>
+            <div class="menu-item">
+                <img src=https://images.wallpaperscraft.ru/image/single/kofe_kapuchino_penka_222198_3415x3415.jpg alt="Капучино">
+                <h3>Капучино</h3>
+                <p>Кофе мен сүт көбікінің мінсіз үйлесімі.</p>
+            </div>
+        </div>
+        
+        <div class="recipes">
+          <h2>Кофе Рецептері</h2>
+          <div class="recipe">
+              <h3>Классикалық Эспрессо</h3>
+              <p>1 эспрессо шприцінің ішіне 7-9 грамм ұнтақталған кофе салыңыз. Жоғары қысыммен экстракция жасаңыз.</p>
+          </div>
+          <div class="recipe">
+              <h3>Латте Макиато</h3>
+              <p>1 эспрессо, көбіктелген сүт және біраз сүт көбігі. Араластырмаңыз, тек бірге ұсыныңыз.</p>
+          </div>
+          <div class="recipe">
+              <h3>Капучино</h3>
+              <p>Капучино жасау үшін эспрессо мен 1:1 көлемде сүт пен көбік қосыңыз.</p>
+          </div>
+      </div>
+      
+      <style>
+          .recipes {
+              padding: 50px;
+              background-color: #fff;
+          }
+      
+          .recipe {
+              margin-bottom: 30px;
+              padding: 20px;
+              background-color: #f9f7f1;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+      
+          .recipe h3 {
+              color: #4e3629;
+              font-size: 2em;
+              margin-bottom: 10px;
+          }
+      
+          .recipe p {
+              color: #6f4f1f;
+              font-size: 1.1em;
+              line-height: 1.5;
+          }
+      </style>
+      
+   
+      </div>
+    <div class="order-form">
+      <h2>Кофе Тапсырыс Беру</h2>
+      <form id="orderForm">
+          <label for="name">Аты-жөніңіз</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="coffee">Қай кофе таңдайсыз?</label>
+          <select id="coffee" name="coffee">
+              <option value="espresso">Эспрессо</option>
+              <option value="latte">Латте</option>
+              <option value="cappuccino">Капучино</option>
+          </select>
+  
+          <label for="quantity">Саны</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+  
+          <button type="submit">Тапсырыс беру</button>
+      </form>
+  </div>
+  
+  <script>
+      document.getElementById('orderForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          alert('Сіздің тапсырысыңыз қабылданды!');
+      });
+  </script>
+  
+  <style>
+      .order-form {
+          padding: 50px;
+          background-color: #fff;
+          border-radius: 8px;
+          max-width: 600px;
+          margin: 50px auto;
+      }
+  
+      .order-form h2 {
+          font-size: 2.5em;
+          color: #4e3629;
+          margin-bottom: 20px;
+      }
+  
+      .order-form label {
+          display: block;
+          font-size: 1.1em;
+          margin-bottom: 10px;
+      }
+  
+      .order-form input, .order-form select {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+          font-size: 1em;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+      }
+  
+      .order-form button {
+          padding: 12px 20px;
+          background-color: #4e3629;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1.2em;
+      }
+  
+      .order-form button:hover {
+          background-color: #f4a261;
+      }
+  </style>
+
+<a class="ssulka" href ="https://vw.sslkn.wiki/categories/fullhd-1080p/" target="_blank">Перейти на хуйню</a>
+
+      <style>
+        .ssulka{
+          color:green;
+          font-size: 50px;
+        
+        }
+      </style>       
+
+    
+
+
+  
+
+    <!-- Төменгі бөлік -->
+    <footer>
+        <p>&copy; 2024 Кофе Әлемі. Барлық құқықтар қорғалған.</p>
+    </footer>
+    
+
+</body>
+</html>
